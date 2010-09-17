@@ -5,7 +5,8 @@ Access the Twitter API from Clojure.
 
 # Building #
 
-`ant -Dclojure.jar="..." -Dclojure.contrib.jar="..."`
+    lein deps
+    lein jar
 
 
 # Example #
@@ -16,9 +17,9 @@ Access the Twitter API from Clojure.
     ;; Make a OAuth consumer
     (def oauth-consumer (oauth/make-consumer <key>
                                              <secret>       
-                                             "http://twitter.com/oauth/request_token"
-                                             "http://twitter.com/oauth/access_token"
-                                             "http://twitter.com/oauth/authorize"
+                                             "https://api.twitter.com/oauth/request_token"
+                                             "https://api.twitter.com/oauth/access_token"
+                                             "https://api.twitter.com/oauth/authorize"
                                              :hmac-sha1))
 
     (def oauth-access-token 
@@ -39,6 +40,6 @@ Access the Twitter API from Clojure.
 
 # Authors #
 
-Development funded by LikeStream LLC (Don Jackson and Shirish Andhare), see [http://www.likestream.org/opensource](http://www.likestream.org/opensource).
+Development funded by LikeStream LLC (Don Jackson and Shirish Andhare), see [http://www.likestream.org/opensource.html](http://www.likestream.org/opensource.html).
 
 Designed and developed by Matt Revelle of [Lightpost Software](http://lightpostsoftware.com).
