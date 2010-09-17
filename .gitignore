@@ -2,3 +2,5 @@
 pom.xml
 *.jar
 classes
+*.swp
+clojure-twitter*.jar
